@@ -1,10 +1,10 @@
 # Feedback to Improve the Code
 
-## `index.html`
-- According to https://validator.w3.org/, there are errors in the `index.html` files.
-
+### `index.html`
+Have you validated the code in `index.html` using https://validator.w3.org/? (The original HTML have some errors)
+ 
 ---
-## `script.js`
+### `script.js`
 
 #### Calling `render()` twice on page load
 On page load, `render()` is unnecessarily called twice; once in `populateStorage()` and once in the  `onload` event listener.
