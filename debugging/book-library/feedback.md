@@ -1,8 +1,20 @@
 # Feedback to Improve the Code
 
 ### `index.html`
+
+#### Check for syntax error in HTML and CSS
 Have you validated the code in `index.html` using https://validator.w3.org/? (The original HTML have some errors)
- 
+
+#### Loading script as ES module 
+Suggestion: Consider loading `script.js` as an ES module to isolate its scope from the global context as:
+
+`<script src="script.js" type="module"></script>`
+
+This ensures that variables, functions, and imports in script.js don't leak into the global namespace, 
+helps prevent naming conflicts, and enables the use of modern JavaScript features like import and export.
+
+Note: With `type="module"`, `defer` is automatically enforced.
+
 ---
 ### `script.js`
 
